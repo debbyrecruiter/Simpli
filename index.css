@@ -1,0 +1,94 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 219 100% 86%; /* Updated to #B5CAFF */
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%; /* Changed from yellow to white */
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 252 88% 98%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 281 69% 46%; /* Purple for #512888 */
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 214 32% 91%; /* Gray */
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 220 8% 70%; /* Soft gray */
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 237 100% 95%; /* Converted #F0F0FF to HSL */
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 252 75% 70%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 240 100% 97%; /* Converted #F0F0FF to HSL */
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 56 100% 90%; /* Yellow */
+    --sidebar-primary-foreground: 240 5.9% 10%;
+    --sidebar-accent: 214 32% 91%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-ring: 252 75% 70%;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 100%; /* Changed from yellow to white for dark mode too */
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 281 69% 46%; /* Purple for #512888 in dark mode */
+    --primary-foreground: 240 10% 3.9%;
+
+    --secondary: 214 32% 20%; /* Dark gray */
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 217 33% 18%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 237 100% 40%; /* Darker shade for dark mode */
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 217 33% 18%;
+    --input: 217 33% 18%;
+    --ring: 252 75% 70%;
+    
+    --sidebar-background: 240 100% 97%; /* Same color for dark mode */
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 56 100% 30%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 217 33% 18%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 217 33% 18%;
+    --sidebar-ring: 252 75% 70%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
